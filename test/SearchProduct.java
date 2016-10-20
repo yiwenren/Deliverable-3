@@ -29,7 +29,7 @@ public class SearchProduct extends BaseTest {
      */
     @Test
     public void searchProduct() {
-        
+        //go to the online store and search ipad      
         driver.get("http://store.demoqa.com/");
         WebElement searchBar = driver.findElement(By.xpath("//input[@name='s']"));
         searchBar.clear();
@@ -47,7 +47,7 @@ public class SearchProduct extends BaseTest {
      */
     @Test
     public void searchNoExistingProduct() {
-        
+        //go to online store to search product named by "aaa"
         driver.get("http://store.demoqa.com/");
         WebElement searchBar = driver.findElement(By.xpath("//input[@name='s']"));
         searchBar.clear();
@@ -66,7 +66,7 @@ public class SearchProduct extends BaseTest {
      */
     @Test
     public void inputNothingWhenSearch() {
-        
+        //go to the online store and input nothing
         driver.get("http://store.demoqa.com/");
         WebElement searchBar = driver.findElement(By.xpath("//input[@name='s']"));
         searchBar.clear();
