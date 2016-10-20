@@ -8,9 +8,9 @@ When I did this deliverable, I faced some issues. The reason is that I was not f
   So that I can access my purchase history
 
   1) Scenario1
-    Given a correct username
-    And a correct password
-    When I try to log in with those credential
+    Given a correct username   
+    And a correct password     
+    When I try to log in with those credential       
     Then I should log in successfully
 
   2) Scenario2
