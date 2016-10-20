@@ -27,16 +27,19 @@ public class SelectProduct extends BaseTest {
      */
     @Test
     public void addProductToCart() {
+        //searched ipad in the online store
         driver.get("http://store.demoqa.com/");
         WebElement searchBar = driver.findElement(By.xpath("//input[@name='s']"));
         searchBar.clear();
         searchBar.sendKeys("ipad" + Keys.RETURN);
         
+        //go to checkout
         waitUntil(d -> d.findElement(By.xpath("//input[@name='Buy']")).isDisplayed());
         driver.findElement(By.xpath("//input[@name='Buy']")).submit();
         waitUntil(d -> d.findElement(By.linkText("Go to Checkout")).isDisplayed());
         driver.findElement(By.linkText("Go to Checkout")).click();
         
+        //there should be one ipad in the cart
         waitUntil(d -> d.findElement(By.xpath("//div[@id='checkout_page_container']/div")).isDisplayed());
         WebElement productContainer = driver.findElement(By.xpath("//div[@id='checkout_page_container']/div")); 
         assertTrue(productContainer.getText().contains("Apple iPad"));
