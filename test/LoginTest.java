@@ -29,11 +29,13 @@ public class LoginTest extends BaseTest{
     
     @Test
     public void loginSuccessfully(){
+        //send correct password and username
         driver.get("http://store.demoqa.com/products-page/your-account/");
         driver.findElement(By.id("log")).sendKeys("YR");
         driver.findElement(By.id("pwd")).sendKeys("12345");
         driver.findElement(By.id("login")).click();
         
+        //login
         By topToolBar = By.id("wp-admin-bar-my-account");
         waitUntil(d -> d.findElement(topToolBar).isDisplayed());
         assertEquals("Howdy, YR", driver.findElement(topToolBar).getText());
@@ -48,6 +50,7 @@ public class LoginTest extends BaseTest{
      */
     @Test
     public void loginWithIncorrectName(){
+        //send incorrect username and correct password
         driver.get("http://store.demoqa.com/products-page/your-account/");
         driver.findElement(By.id("log")).sendKeys("YR111");
         driver.findElement(By.id("pwd")).sendKeys("12345");
@@ -68,6 +71,7 @@ public class LoginTest extends BaseTest{
      */
     @Test
     public void loginWithIncorrectPassword(){
+        //send correct username and incorrect password
         driver.get("http://store.demoqa.com/products-page/your-account/");
         driver.findElement(By.id("log")).sendKeys("YR");
         driver.findElement(By.id("pwd")).sendKeys("111");
