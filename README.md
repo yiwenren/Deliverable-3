@@ -13,17 +13,17 @@ When I did this deliverable, I faced some issues. The reason is that I was not f
     When I try to log in with those credential
     Then I should log in successfully
 
-2) Scenario2
-  Given an incorrect username
-  And a correct password
-  When I try to log in with those credential
-  Then I should receive an error message with "ERROR: Invalid login credentials." on it
-     
-3) Scenario3
-  Given a correct username
-  And an incorrect password
-  When I try to log in with those credential
-  Then I should receive an error message with "ERROR: Invalid login credentials." on it
+  2) Scenario2
+    Given an incorrect username
+    And a correct password
+    When I try to log in with those credential
+    Then I should receive an error message with "ERROR: Invalid login credentials." on it
+
+  3) Scenario3
+    Given a correct username
+    And an incorrect password
+    When I try to log in with those credential
+    Then I should receive an error message with "ERROR: Invalid login credentials." on it
   
 
 2. User Story 2
