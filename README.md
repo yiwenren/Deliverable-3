@@ -2,9 +2,9 @@
 
 When I did this deliverable, I faced some issues. The reason is that I was not familiar with test methods. Here is an instance. I wanted to test whether a webElement existed, but I didn’t know how to implement it by codes. So I searched the solutions online. Then I found some people use “try catch” to solve this problem. That is, try {(driver.findElement()) catch(exception){fail()}. But I was not sure whether this was a common solution, because I didn’t see you use it in your related examples. So finally, I used method “assertNotNull” instead of “try catch” to prove whether an element exists.
 
-1. User Story 1
-  As a user
-  I would like to log in
+1. User Story 1     
+  As a user     
+  I would like to log in     
   So that I can access my purchase history
 
   1) Scenario 1     
@@ -46,10 +46,10 @@ When I did this deliverable, I faced some issues. The reason is that I was not f
         When I input nothing in the search box and clicks return     
         Then there should be products shown on the website
 
-3. User Story 3
-    As a user
-    I would like to select products 
-    So that I can purchase
+3. User Story 3     
+  As a user     
+  I would like to select products      
+  So that I can purchase
 
     1) Scenario 1      
         Given I have searched iPad in the online store      
