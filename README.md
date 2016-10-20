@@ -4,7 +4,7 @@ When I did this deliverable, I faced some issues. The reason is that I was not f
 
 The problems I met most frequently is related to the wait time. I always forgot to wait until some elements appear or wait for several seconds. So unfortunately, I experienced many test failures.      
 
-Another problem I met was when I was testing login, my IP address was blocked because I had logged in many times, which made me depressed. I even searched different methods to try to change my IP address… But anyway, I finished my login test successfully!
+Another problem I met was when I was testing login, my IP address was blocked because I had logged in many times, which made me depressed. I even searched different methods to try to change my IP address… But anyway, I finished my login test successfully:)
 
 
 
