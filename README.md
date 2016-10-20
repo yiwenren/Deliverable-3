@@ -2,7 +2,10 @@
 
 When I did this deliverable, I faced some issues. The reason is that I was not familiar with test methods. Here is an instance. I wanted to test whether a webElement existed, but I didn’t know how to implement it by codes. So I searched the solutions online. Then I found some people use “try catch” to solve this problem. That is, try {(driver.findElement()) catch(exception){fail()}. But I was not sure whether this was a common solution, because I didn’t see you use it in your related examples. So finally, I used method “assertNotNull” instead of “try catch” to prove whether an element exists.
 
-The problems I met most frequently is related to the wait time. I always forgot to wait until some elements appear or wait for several seconds. So unfortunately, I experienced many test failures.     
+The problems I met most frequently is related to the wait time. I always forgot to wait until some elements appear or wait for several seconds. So unfortunately, I experienced many test failures.      
+
+Another problem I met was when I was testing login, my IP address was blocked because I had logged in many times, which made me depressed. I even searched different methods to try to change my IP address… But anyway, I finished my login test successfully!
+
 
 
 
